@@ -27,15 +27,19 @@ CREATE TABLE IF NOT EXISTS `author_book` (
 
 INSERT INTO author (name, surname)
 VALUES ('Lev', 'Tolstoy'),
-       ('J', 'Rowling');
+       ('J', 'Rowling'),
+       ('A', 'Belov'),
+       ('V', 'Nikolashin');
 
 INSERT INTO books (title, description)
 VALUES ('Anna karenina', 'some good book'),
-       ('детство', 'еще 1 книга Толстого'),
+       ('Сhildhood', 'some good book2'),
        ('Harry Potter', 'classic book'),
-       ('1986', 'у нее нет автора в нашей табличке(((');
+       ('Economy', 'for students');
 
 INSERT INTO author_book (author_id, book_id)
 VALUES (1, 1),
        (1, 2),
-       (2, 3);
+       (2, 3),
+       (3, 4),
+       (4, 4);

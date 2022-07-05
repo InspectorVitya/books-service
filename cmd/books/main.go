@@ -47,4 +47,5 @@ func main() {
 	if err != nil {
 		logger.Err(err).Send()
 	}
+	logger.Info().Msg("service stopped...")
 }
