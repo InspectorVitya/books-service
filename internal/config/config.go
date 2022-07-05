@@ -7,7 +7,7 @@ type Config struct {
 	UserDB     string `env:"MYSQL_USER" env-default:"root"`
 	PasswordDB string `env:"MYSQL_PSW" env-default:"root"`
 	NameDB     string `env:"MYSQL_DB" env-default:"books"`
-	PortDB     string `env:"MYSQL_PORT" env-default:"3308"`
+	PortDB     string `env:"MYSQL_PORT" env-default:"3808"`
 	HostDB     string `env:"MYSQL_HOST" env-default:"localhost"`
 }
 
