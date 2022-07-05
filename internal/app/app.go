@@ -26,7 +26,7 @@ func (app *BooksApp) GetBooks(ctx context.Context, id uint64) ([]model.Books, er
 
 //GetAuthor возвращает слайс авторов по книге и ошибку, если она есть
 func (app *BooksApp) GetAuthor(ctx context.Context, id uint64) ([]model.Author, error) {
-	authors, err := app.db.FindAuthorByBooks(ctx, id)
+	authors, err := app.db.FindAuthorByBook(ctx, id)
 	if err != nil {
 		return nil, err
 	}
